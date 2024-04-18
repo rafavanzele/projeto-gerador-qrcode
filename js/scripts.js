@@ -14,7 +14,7 @@ function generateQrCode() {
 
     qrCodeBtn.innerHTML = 'Gerando QR Code...'
 
-    qrCodeImg.src = ` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrCodeInputValue}`
+    qrCodeImg.src = ` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrCodeInputValue}` //link retirado diretamente da api do qr code, achado no google
 
     qrCodeImg.addEventListener('load', () => {
         container.classList.add('active')
